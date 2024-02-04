@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio tablas</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 0px auto;
+            width: 50%;
+            
+        }
+        
+        img{
+            height: 50px;
+            width: 50px;
+        }
+        td,th{
+            border:1px solid black;
+        }
+
+        [colspan="2"],[colspan="3"]{
+            background-color: blue;
+        }
+
+        .red{
+            background-color: red;
+            color: white;
+        }
+        #fila .grey{
+            background-color: grey;
+            font-size: 2em;
+            text-align: center;
+        }
+        .yellow{
+            background-color: yellow;
+            padding: 50px;
+        }
+
+        #lista{
+            color:orangered;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1> EJERCICIO PRÁCTICO CON TABLAS
+    </h1>
+    <table>
+        <tr>
+            <td></td>
+            <th colspan="3" ><img src="img/120_ipod.png"></th>
+            <th colspan="2" ><img src="img/100_ipod.png"></th>
+        </tr>
+        <tr id="fila">
+            <th class="red">Capacidad</th>
+            <td class="grey">2GB</td>
+            <td class="grey">4GB</td>
+            <td class="grey">8GB</td>
+            <td class="grey" >32GB</td>
+            <td class="grey">2GB</td>
+        </tr>    
+
+        <tr>
+            <th class="red">Colores</th>
+            <th>Blanco</th>
+            <td><ul id="lista">
+                <li>Negro</li>
+                <li>Rosa</li>
+                <li>Dorado</li>
+            </ul></td>
+            <th>Negro</th>
+            <td colspan="2" class="blue">
+                <ul id="lista">
+                    <li>Negro</li>
+                    <li>Blanco</li>
+                </ul>
+            </td>
+        </tr>    
+
+        <tr>
+            <th class="red">Pantalla</th>
+            <th colspan="3" >3 pulgadas</th>
+            <th colspan="2" >7 pulgadas</th>
+        </tr>    
+
+        <tr>
+            <th rowspan="2" class="red">Tiempo de Carga</th>
+            <th rowspan="2" colspan="3" >1 hora</th>
+            <th colspan="2" class="yellow">5 horas</th>
+        </tr>
+
+        <tr>
+            <th colspan="2" >30 minutos para 75%</th>
+        </tr>        
+    </table>
+</body>
+</html>
