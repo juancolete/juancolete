@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio pseudoselectores</title>
+
+    <style>
+
+        a{
+            text-decoration: none;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        table{
+            border-collapse: collapse;
+            border: solid 1px black;
+            text-align: center;
+            padding: 0px auto;
+            width:  50%;
+        }
+
+        tr th:last-child:hover,
+        tr td:last-child:hover{
+            font-size: 2em;
+
+        }
+
+        td,th{
+            border: solid 1px black;
+        }
+
+        tbody tr td:first-child{
+            background-color: green;
+        }
+
+        tbody tr:nth-child(3) th:nth-child(2) {
+            background-color: yellow;
+        }
+        #dias th::first-letter{
+            font-size: 2em;
+            color: black;
+        }
+        #mail::after{
+            content: "*";
+            color:red;
+
+        }
+
+        input:required{
+            border-color: red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption> <a href="#">HORARIO DE CLASE CURSO 2018-2019</a> </caption>
+
+        <thead >
+            <tr id="dias">
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <th colspan="5">RECREO</th>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <label for="mail" id="mail">Email</label> <input type="text" name="mail" required> 
+    </p>
+    <p>
+        <input type="submit" value="Enviar Horario">
+    </p>
+
+</body>
+</html>
