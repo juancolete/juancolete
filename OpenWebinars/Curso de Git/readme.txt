@@ -1,1 +1,0 @@
-Contenido curso de git

@@ -1,0 +1,61 @@
+Comandos básicos
+
+git init: Inicia un nuevo repositorio Git en un directorio.
+
+git clone [url]: Clona un repositorio remoto en tu máquina local.
+
+git add [archivo]: Agrega cambios al área de preparación (staging).
+
+git commit -m "[mensaje]": Guarda los cambios en el repositorio con un mensaje descriptivo.
+
+git status: Muestra el estado actual del repositorio (archivos modificados, agregados, etc.).
+
+git pull: Obtiene cambios desde un repositorio remoto y los fusiona en tu rama local.
+
+git push: Envía tus cambios locales a un repositorio remoto.
+
+git branch: Lista las ramas en el repositorio.
+
+git checkout [nombre_rama]: Cambia a la rama especificada.
+
+git merge [nombre_rama]: Fusiona los cambios de una rama a la rama actual.
+
+git log: Muestra el historial de commits.
+
+git remote -v: Muestra los repositorios remotos configurados.
+
+git fetch: Obtiene cambios desde un repositorio remoto, pero no los fusiona automáticamente.
+
+git reset [archivo]: Deshace cambios en el área de preparación.
+
+git revert [commit]: Crea un nuevo commit que deshace los cambios de un commit anterior.
+
+git diff: Muestra las diferencias entre el área de trabajo y el área de preparación.
+
+git log --oneline: Muestra el historial de commits de forma resumida.
+
+git branch [nombre_rama]: Crea una nueva rama.
+
+git branch -d [nombre_rama]: Elimina una rama (si ya se ha fusionado).
+
+git stash: Guarda temporalmente los cambios no comprometidos para trabajar en otra cosa.
+
+git tag [nombre_tag]: Crea una etiqueta para marcar un punto específico en la historia.
+
+git remote add [nombre_remoto] [url_remoto]: Agrega un nuevo repositorio remoto.
+
+git remote remove [nombre_remoto]: Elimina un repositorio remoto.
+
+git log --graph --oneline --all: Muestra el historial de commits de forma gráfica con todas las ramas.
+
+git cherry-pick [commit]: Aplica cambios de un commit específico a la rama actual.
+
+git fetch --prune: Elimina referencias locales a ramas eliminadas en el repositorio remoto.
+
+git config --global [clave] [valor]: Configura opciones globales de Git.
+
+git rebase [rama_base]: Reorganiza y combina commits para que parezca que se hicieron en una rama base.
+
+git clean -n: Muestra los archivos no rastreados que serán eliminados con git clean -f.
+
+git blame [archivo]: Muestra quién modificó cada línea de un archivo y en qué commit.

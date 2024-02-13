@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+    const TOTAL = 106;
+    const PERSONAS = 6;
+    const RESULTADO = TOTAL / PERSONAS;
+
+    console.log(RESULTADO.toFixed('2'));
+
+
+    const PRECIO_MOVIL = 300;
+    const PRECIO_CASCOS = 30;
+    const PRECIO_FUNDA = 10;
+    const DESCUENTO = 10;
+
+    const SUMA_PRODUCTOS = ( PRECIO_MOVIL + PRECIO_CASCOS + PRECIO_FUNDA);
+    const CALCULO_DESCUENTO = ((SUMA_PRODUCTOS * DESCUENTO) / 100);
+
+    console.log(CALCULO_DESCUENTO);
+
+    const CARRITO = (SUMA_PRODUCTOS - CALCULO_DESCUENTO);
+
+    console.log(CARRITO);
+    </script>
+</body>
+</html>
