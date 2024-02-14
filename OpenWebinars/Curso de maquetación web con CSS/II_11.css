@@ -1,0 +1,85 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Estilo título*/
+h1{
+    text-align: center;
+}
+
+/*Centrando contenedor*/
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+/*Estilo nav*/
+nav{
+    background-color: black;
+    color: #fff;
+}
+
+/*Estilo letras nav*/
+nav div{
+    display: inline-block;
+    padding: 10px;
+    width: 15%;
+}
+
+/*Estilo sidebar*/
+.aside{
+    background-color: black;
+    color: white;
+    float: left;
+    height: 500px;
+    margin-top: 30px;
+    width: 15%;
+}
+
+/*Estilo para las letras del sidebar*/
+.aside div{
+    padding: 10px;
+}
+
+/*Estilo contenedor de tarjetas*/
+section.sections1{
+    float: left;
+    margin-left: 5%;
+    width: 80%;
+}
+
+/*Estilo tarjetas*/
+.section{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 0.8em;
+    float: left;
+    padding: 10px;
+    margin-top:30px;
+    text-align: center;
+    width: 33%;
+    
+}
+
+/*Tamaño imágenes*/
+.section img{
+    width: 50%;
+}
+
+/*Estilo párrafos*/
+.sections2{
+    column-count: 3;
+    float: left;
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 80%;
+}
+
+/*Estilo footer*/
+footer{
+    text-align: center;
+    background-color: lightgrey;
+    clear: both;
+    padding: 4px;
+}
