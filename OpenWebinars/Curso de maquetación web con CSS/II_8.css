@@ -1,0 +1,130 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: lightgrey;
+}
+
+/*Estilo contenedor general*/
+.contenedor {
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin: 100px auto;
+    position: relative;
+    height: 600px;
+    width: 80%;
+}
+
+/* Estilo y posición de la barra de navegación*/
+.contenedor nav{
+    background-color: #555555;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+/*Estilo para el menú de navegación*/
+.contenedor nav div{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    width: 20%;
+}
+
+/* Estilo general figuras*/
+.contenedor figure{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+
+}
+
+/*Tamaño posición de cada figura*/
+#img1{
+    left: 20%;
+    position: absolute;
+    top: 25%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 10;
+}
+
+#img2{
+    left: 30%;
+    position: absolute;
+    top: 30%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 8;
+}
+
+#img3{
+    left: 40%;
+    position: absolute;
+    top: 35%;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    z-index: 6;
+}
+
+#img4{
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    z-index: 4;
+}
+
+/*Tamaño de las imágenes*/
+#img1 img{
+    height: auto;
+    width: 90%;
+}
+
+#img2 img{
+    height: auto;
+    width: 90%;
+}
+
+#img3 img{
+    height: auto;
+    width: 90%;
+}
+
+#img4 img{
+    height: auto;
+    width: 90%;
+}
+
+/*Estilo para el sidebar izquierdo*/
+.sidebar{
+    
+    border: 2px solid black;    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 0.8em;
+    height: 40%;
+    position: fixed;
+    text-align: center;
+    top: 30%;
+    width: 80px;   
+}
+
+
+.sidebar ul {
+    list-style:  none;
+    padding-left: 5px;
+}
+
+.sidebar img{
+    width: 90%;
+    margin: 5%;
+}
