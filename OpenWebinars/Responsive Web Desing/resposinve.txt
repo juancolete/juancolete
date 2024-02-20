@@ -1,0 +1,186 @@
+RESPONSIVE WEB DESIGN
+
+Una aproximacíon al diseño web que permite que nuestras páginas web se vean correctamente
+en una variedad de dispositivos y de tamaño de pantall adaptando el layout al entorno de visualización.
+
+¿Cómo?
+CSS + ETIQUETAS + MEDIA QUERIES
+
+Si tu página no es responsive google hace un demoted (La pone atrás). 
+
+En DESKTOP, el viewport es la pantalla de nuestro navegador.
+
+Hardware Pixels: Son pixels de resolución que nos da la tarjeta gráfica.
+Device Independent Pixels (DPI): Es la unidad de medida del navegador. Se relaciona con la distancia real
+y ocupan lo mismo independientemente de la densidad de pixels de la pantalla.
+Device Pixel Ratio (DPR): Hw Pixels / DPI (En una dimensión).
+
+Solución
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+TIPOS DE DISEÑOS
+FIXED (PX)
+VEMTAJAS
+CONTROL TOTAL
+DESVENTAJAS
+SCROLL HORIZONTAL (SI NO ESCALO)
+ÚTIL NO CAMBIAR EL LAYOUT
+
+ELASTIC (EM)
+VENTAJAS
+CONTROL AL HACER ZOOM Y ZOOM OUT MANTIENE PROPORCIONES
+DESVENTAJAS
+SON FIXED
+DIFICULTAD CALCULO DIMENSIONES REALES
+EMS SE CALCULAN EN RELACIÓN AL PADRE (REM)
+NO HAY FLUIDEZ AL CAMBIAR TAMAÑO DE PANTALLA. NO ADAPTACIÓN
+
+FLUID/LIQUID/RELATIVE (%)
+VENTAJAS
+SE ADAPTAN AL VIEWPORT, AL TAMAÑO DE LO QUE ESTÁ VIENDO EL USUARIO
+
+BREACKPOINT: Es la anchura en la que se produce un cambio de layout en respuesta
+a ciertas condiciones del dispositivo (media queries).
+
+TÍPICOS BRACKPOINTS
+<576px (pantallas pequeñas)
+576px-768px (móviles apaisados)
+768px-992px (tablets)
+992px-1200px (desktops)
+>1200px (pantallas grandes)
+
+
+MEDIA QUERIES: Es un módulo de CSS3 que permite adaptar la representación del contenido a las
+características del dispositivo.
+
+SINTAXIS
+@media mediatype [condiciones]
+
+TIPOS DE MEDIA 
+all
+screen
+tty 
+print
+tv
+projected 
+braille
+
+¿QUE CONSULTO?
+WIDTH |min-width|max-width
+HEIGHT |min-hegth|max-heigth
+orientation (landscape/portrait)
+ASPECT-RATIO |min-aspect-ratio|max-aspect-ratio
+COLOR |min-color|max-color
+
+CONDICIONES 
+AND
+NOT
+ALL
+ONLY
+
+EN HOJAS DE ESTILOS DIFERENTES
+<link rel="stylesheet" media="(max-width:576px)" href="small.css"/>
+<link rel="stylesheet" media="(max-width:768px)" href="medium.css"/>
+<link rel="stylesheet" media="(max-width:992px)" href="large.css"/>
+
+PROCESO DE DISEÑO Y PATRONES RESPONSIVOS
+
+PRIMER DISEÑO - START SMALL / MOVIL - TABLET - PANTALLA
+-Priorizo siempre lo que es importante: al revés es muy fácil quitar cosas importantes.
+-Me pregunto en cada diseño si es necesario un nuevo diseño para pantallas más grandes.
+-Elijo los BREACKPOINTS necesarios.
+
+PATRONES RESPONSIVOS
+Los patrones son soluciones que se han dado por buenas para cierto tipo de problemas.
+En nuestro caso, el diseño de páginas web responsivas.
+
+PATRONES COMUNES
+COLUMN DROP: és el patrón más básico y básicamente consiste en que cada brackpoint se va apilando un elemento.
+MOSTLY FLUID: Es una cuadrícula fluida y en cada BREACKPOINT hay un redimensionamiento de varias columnas.
+LAYOUTSSHIFTER: Patrón más responsivo, cambio el diseño en cada BREACKPOINT en vez de únicamente organizar el flujo y la
+anchura de los elementos.
+OFF CANVAS: En vez de apilar contenidos, éstos se colocan fuera de la pantalla cuando el tamaño de la pantalla
+no es lo suficientemente grande.
+....
+MEZCLA DE VARIOS
+PEQUEÑOS AJUSTES (TINY TWEAKS..)
+
+IMÁGENES RESPONSIVE
+
+OPTIMIZAR EL USO DE IMÁGENES
+-CONSUME MENOS ANCHO DE BANDA
+-ELEGIR VERSIÓN DE UNA MISMA IMÁGEN MÁS ADECUADA PARA LA RESOLUCIÓN
+
+ASPECTOS A TENER EN CUENTA
+-ANCHO DEL DISPOSITIVO
+-DIMENSIONES DE LA IMÁGEN
+-RESOLUCIÓN DE LA IMÁGEN (RETINA DISPLAYS)
+
+USAR IMÁGENES SVG PERO NO SIEMPRE ES POSIBLE
+
+OPTIMIZACIÓN IMÁGENES JPEG,PNG,GIF USAR IMÁGEN DE GRAN RESOLUCIÓN (SI NO NOS IMPORTA LA OPTIMIZACIÓN)
+
+SI NOS IMPORTA LA OPTIMIZACIÓN - USAMOS ATRIBUTO srcset o sizes
+
+DISEÑO ART-DIRECTOR - Consiste en elegir una u otra imágen utilizando la etiqueta
+source dentro de la etiqueta picture y sus atributos srcset para indicar la imágen y media que funciona
+de manera similar a una media query.
+
+TABLAS RESPONSIVE
+Las tablas son un elemento problemático en el diseño responsivo
+ya que en cuanto tienen más de unas pocas columnas van a provocar un scroll horizontal
+en pantallas pequeñas.
+
+POSIBLES SOLUCIONES
+
+-ESCONDER COLUMNAS
+VENTAJAS 
+-DISEÑO RESPONSIVOS
+-PRIORIZO EL CONTENIDO
+DESVENTAJAS
+-PIERDO INFORMACIÓN
+
+-CONVERTIR FILAS A LISTAS
+VENTAJAS
+-DISEÑO RESPONSIVOS
+-NO PIERDO INFORMACIÓN
+DESVENTAJAS
+NO PRIORIZO INFORMACION
+DESPLAZO HACIA ABAJO EL RESTO DE LAYOUT
+
+-SCROLL CONTROLADO
+VENTAJAS
+-DISEÑO RESPONSIVO
+-NO PIERDO INFORMACION
+DESVENTAJAS
+NO PRIORIZO INFORMACION
+SCROLL HORIZONTAL
+
+TEXTO RESPONSIVE
+CUANDO HABLAMOS DE DISEÑO RESPONSIVO SOLEMOS DAR MÁS IMPORTANCIA AL LAYOUT,
+PERO EL TEXTO QUE VAMOS A PRESENTAR ES IGUAL DE IMPORTANTE PARA CONSEGUIR 
+UN BUEN DISEÑO.
+
+PROBLEMAS
+-LÍNEA CORTA
+-LÍNEA LARGA
+-LETRA PEQUEÑA
+
+SOLUCIONES
+-LA LÍNEA IDEAL DEBE TENER 60-80 CARÁCTERES
+-UNIDAD VIEWPORT
+	-VW ANCHURA VIEWPORT
+	-VH ALTURA VIEWPORT	
+	-VMIN 
+	-VMAX
+	
+1VW ES UN 1% DE LA ANCHURA DEL VIEWPORT (ANCHURA REAL)
+
+ES COMPLEJO Y DEBEMOS HACER PRUEBAS CON MULTITUD DE PANTALLAS, USAR FUNCIONES COMO CALC().
+
+PAUTAS PARA TEXTO RESPONSIVO
+-CALCULAR EL TAMAÑO MÍNIMO Y MÁXIMO QUE ME PUEDO PERMITIR. USAR CALC()
+-NO IMPORTA SI HAY TEXTO QUE HACE "REFLOW" (PASAR A LA SIGUIENTE LÍNEA)
+-MANTENER EL TAMAÑO PERFECTO DE LÍNEA PUEDE QUE SEA IMPOSIBLE
+PRIORIZA MÓVILES Y TABLETS
+EN ALGUNOS ELEMENTOS (COMO NAVEGACION) PUEDE TENER SENTIDO USAR TAMAÑOS FIJOS.
