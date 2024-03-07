@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>list-group</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Course CSS -->
+  <link rel="stylesheet" ref="styles.css" />
+</head>
+
+<body>
+  <!--Listas-->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <ul class="list-group">
+        <li class="list-group-item active">Opción 1</li> <!--activar opción-->
+        <li class="list-group-item list-group-item-warning">Opción 2</li> <!--color amarillo-->
+        <li class="list-group-item disabled">Opción 3</li> <!--Desabilitar opción-->
+        <li class="list-group-item">Opción 4</li>
+        <li class="list-group-item">Opción 5</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <!--listas con enlaces-->
+        <div class="list-group">
+          <a href="#panel1" class="list-group-item list-group-item-action active" data-toggle="list">Enlace 1</a>
+          <a href="#panel2" class="list-group-item list-group-item-action" data-toggle="list">Enlace 2</a>
+          <a href="#panel3" class="list-group-item list-group-item-action disabled" data-toggle="list">Enlace 3</a>
+          <a href="#panel4" class="list-group-item list-group-item-action" data-toggle="list">Enlace 4</a>
+        </div>
+      </div>
+
+    <div class="col-md-8">
+      <!--Paneles enlazados-->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="panel1">
+            <h1>Contenido del PANEL 1</h1>
+          </div>
+          <div class="tab-pane fade" id="panel2">
+            <h1>Contenido del PANEL 2</h1>
+          </div>
+          <div class="tab-pane fade" id="panel3">
+            <h1>Contenido del PANEL 3</h1>
+          </div>
+          <div class="tab-pane fade" id="panel4">
+            <h1>Contenido del PANEL 4</h1>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
