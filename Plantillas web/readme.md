@@ -1,1 +1,1 @@
-## Plantillas html para ejercicios
+## Plantillas html para ejercicios e investigación
